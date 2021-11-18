@@ -1,0 +1,62 @@
+section {
+  background: #fafafa;
+}
+
+.descricao {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #444;
+  font-family: Rubik,sans-serif!important;
+  font-weight: 400;
+  display: block;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  padding: 0;
+  font-weight: 400;
+  white-space: pre-wrap;
+  text-align: center;
+  font-family: Rubik,sans-serif;
+  margin: 0;
+  z-index: 3;
+  display: block;
+  line-height: 2.6rem;
+  color: #202122;
+}
+
+.local {
+  color: #212121;
+    background-color: transparent;
+    border-bottom: 0px solid #ff7500;
+    box-shadow: inset 0px -3px 0px #ff7500;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border: 0px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: Rubik,sans-serif;
+    text-decoration: none;
+}
+
+.local-selected {
+  border-bottom: 0px solid #994700;
+  box-shadow: inset 0px -3px 0px #994700;
+}
+
+agm-map {
+  height: 300px;
+}
+
+.me-py-10 {
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+}

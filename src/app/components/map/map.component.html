@@ -1,0 +1,41 @@
+<section class="grid justify-content-center me-py-10">
+  <section class="col-12">
+    <p class="descricao">ONDE NOS ENCONTRAR</p>
+    <h1 class="titulo">A missão da igreja é ver o reino de Deus estabelecido em toda a terra.</h1>
+  </section>
+  <div class="col-8">
+    <a href="javascript:void()" class="local" [ngClass]="{'local-selected': cidade === 'CACOAL'}" (click)="cidadeChange('CACOAL')">CACOAL</a>
+    <a href="javascript:void()" class="local" [ngClass]="{'local-selected': cidade === 'MINISTRO ANDREAZZA'}" (click)="cidadeChange('MINISTRO ANDREAZZA')">MIN. ANDREAZZA</a>
+  </div>
+  <ng-container *ngIf="cidade === 'CACOAL'">
+    <div class="col-8 pb-0" style="min-height: 400px;">
+      <iframe *ngIf="local === 'CENTRO'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.5765526546306!2d-61.447886185244904!3d-11.438249691874532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c82f6a2565a15b%3A0xcfb58ae9fd864598!2sAd%20Cacoal%20Madureira!5e0!3m2!1sen!2sbr!4v1637237004061!5m2!1sen!2sbr"style="border:0;" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+      <iframe *ngIf="local === 'BNH'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.7450561250876!2d-61.465670885245004!3d-11.426041291882713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c82f55d39e8c67%3A0x6c8bb49a95bbb8ad!2sAD%20Cacoal%20BNH!5e0!3m2!1sen!2sbr!4v1637238512323!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+      <iframe *ngIf="local === 'TEIXEIRÃO'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.6769219653993!2d-61.43694348524488!3d-11.430979291879432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c82f388ce0d33d%3A0xbfef285fab89b0c4!2sR.%20Pedro%20Spagnol%2C%203603%20-%20Teixeir%C3%A3o%2C%20Cacoal%20-%20RO%2C%2076965-676!5e0!3m2!1sen!2sbr!4v1637238775974!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+      <iframe *ngIf="local === 'HABITAR BRASIL'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.810574380196!2d-61.47944458524518!3d-11.421290891885885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c82fadef6a8287%3A0x2820b3d0390447d7!2sAv.%20Celestino%20Rosalino%2C%202825%20-%20Sociedade%20Bela%20Vista%2C%20Cacoal%20-%20RO%2C%2076960-251!5e0!3m2!1sen!2sbr!4v1637238924338!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+      <iframe *ngIf="local === 'MORADA DO SOL'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.9079951181398!2d-61.472282545552716!3d-11.414223796060774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c82e54e9621509%3A0x1dfce6dec5dfc3cd!2sR.%20Serafim%20Francisco%20das%20Chagas%2C%203242%20-%20Conj.%20Halley%2C%20Cacoal%20-%20RO%2C%2076961-494!5e0!3m2!1sen!2sbr!4v1637239033184!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+      <iframe *ngIf="local === 'ALPHA PARK'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.725559862761!2d-61.421494485244956!3d-11.427454491881672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c82f34b0225c5b%3A0x4a5aeb9535753654!2sR.%20Pioneiro%20Joaquim%20Dias%20Pereira%20-%20Teixeir%C3%A3o%2C%20Cacoal%20-%20RO!5e0!3m2!1sen!2sbr!4v1637240192916!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+      <iframe *ngIf="local === 'RIOZINHO'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.6508310879935!2d-61.36326408524438!3d-11.505091991829556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c8273d7ddc9f59%3A0x588c340662151f89!2sR.%20Rafael%20Scardini%20-%20Riozinho%2C%20Cacoal%20-%20RO!5e0!3m2!1sen!2sbr!4v1637239377251!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+
+    </div>
+    <div class="col-8 pt-0">
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'CENTRO'}" (click)="localChange('CENTRO')">CENTRO</a>
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'BNH'}" (click)="localChange('BNH')">BNH</a>
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'TEIXEIRÃO'}" (click)="localChange('TEIXEIRÃO')">TEIXEIRÃO</a>
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'HABITAR BRASIL'}" (click)="localChange('HABITAR BRASIL')">HABITAR BRASIL</a>
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'MORADA DO SOL'}" (click)="localChange('MORADA DO SOL')">MORADA DO SOL</a>
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'ALPHA PARK'}" (click)="localChange('ALPHA PARK')">ALPHA PARK</a>
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'RIOZINHO'}" (click)="localChange('RIOZINHO')">RIOZINHO</a>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="cidade === 'MINISTRO ANDREAZZA'">
+    <div class="col-8 pb-0" style="min-height: 400px;">
+      <iframe *ngIf="local === 'CENTRO'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d978.4594447258346!2d-61.51680217080725!3d-11.19963559950219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c9ce1ef49f3cab%3A0x7f5e3bf35e2e5ef5!2sR.%20Mato%20Grosso%2C%20Min.%20Andreazza%20-%20RO%2C%2076919-000!5e0!3m2!1sen!2sbr!4v1637239918381!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy" style="width: 100%; height: 400px;"></iframe>
+
+    </div>
+    <div class="col-8 pt-0">
+      <a href="javascript:void()" class="local" [ngClass]="{'local-selected': local === 'CENTRO'}" (click)="localChange('CENTRO')">CENTRO</a>
+    </div>
+  </ng-container>
+
+</section>

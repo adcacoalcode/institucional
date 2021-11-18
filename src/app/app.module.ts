@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { SwiperModule } from "swiper/angular";
 import { SliderComponent } from './components/slider/slider.component';
+import { MapComponent } from './components/map/map.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,15 @@ import { SliderComponent } from './components/slider/slider.component';
     HomeComponent,
     MenuComponent,
     SliderComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCqQ0vinF4mT074dWAWWbfBlErolEGla94'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
