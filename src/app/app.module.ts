@@ -9,6 +9,7 @@ import { SwiperModule } from "swiper/angular";
 import { SliderComponent } from './components/slider/slider.component';
 import { MapComponent } from './components/map/map.component';
 import { AgmCoreModule } from '@agm/core';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AgmCoreModule } from '@agm/core';
     MenuComponent,
     SliderComponent,
     MapComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
